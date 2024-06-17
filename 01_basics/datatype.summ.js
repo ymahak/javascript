@@ -21,3 +21,16 @@ const anId = Symbol('123')
 console.log(id);
 console.log(anId);
 console.log(id === anId);
+
+
+/* ***************************************************** 
+Memory => Stack(Primitive) copy milti h & Heap (Non-primitive) reference of actual value
+*/
+
+let myYou = "mahakyadav"
+let anotherMy = myYou
+anotherMy = "ymaahall"
+
+console.log(myYou);
+console.log(anotherMy);
+
