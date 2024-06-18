@@ -7,7 +7,9 @@ let accState; //undefined
 
 console.log(accId);
 
-console.table([accId , accEmail , accName,accCity ,accState]);
+//console.table([accId , accEmail , accName,accCity ,accState]);
+console.log([accEmail , accId]);
+
 
 /*
 Prefer not to use var 
