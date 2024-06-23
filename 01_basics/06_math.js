@@ -17,13 +17,17 @@ const hundreds = 100000000
 // *********************** Maths ***************************
 
 //console.log(Math);
-console.log(Math.abs(-7)); //-ve ko +ve me convert
-console.log(Math.round(2.8)); //roundoff 3
+// console.log(Math.abs(-7)); //-ve ko +ve me convert
+// console.log(Math.round(2.8)); //roundoff 3
 
 // properties like - ceil(decimal me highest value like 4.2 ka ans 5 ) , floor(neeche vali value decimal me) , min(array me min value) , max
 
-console.log(Math.random());
-console.log((Math.random()*10) + 1); //min value to 1 ayegi .. start 1 se hoga
+// console.log(Math.random());  //0-1 tk value
+// console.log((Math.random()*10) + 1); //min value to 1 ayegi .. start 1 se hoga
 
 
- 
+const min = 10
+const max = 20
+
+console.log(Math.floor(Math.random() * (max - min + 1)) + min); //10-20
+
