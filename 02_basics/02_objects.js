@@ -5,7 +5,7 @@
 //symbol 
 const mySym = Symbol("key1")
 
-
+ 
 const JsUser = {
     name : "Mahak",
     "full name " : "mahak yadav",  //isko . se access ni kr skte
