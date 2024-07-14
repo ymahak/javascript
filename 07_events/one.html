@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <h2>Images</h2>
+    <div>
+        <ul id="companies">
+            <li id="hi">Hello</li>
+            <li id="i">Google</li>
+            <li id="m">Amazon</li>
+            <li id="aa">Samsung</li>
+            <li><a id="link" style="color: aliceblue;" href="https://google.com">Link</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('hi').onclick = function(){
+    //     alert('hello clicked')
+    // }
+    // Event listners - not only give onclick functionality but also propogation ki availablity bhi dete h
+
+    // document.getElementById('hi').addEventListener('click' , function(){
+    //     alert("owl clicked again")
+    // } , 
+    // false)
+    //3rd parameter default false hi hota h 
+
+    //attachEvent()  - phle ye use hota tha
+    //jQuery - framework 
+    //bht saare events(browser ke events , enivorment events (mouse ne kaha click kiya , konsi position thi)) milenge like timestamp sb kuch
+    // events - type , timestamp , defaultPrevented(kisi bhi chej ka default change kr dete h)
+    // target , toElement , srcElement , currentTarget
+    // clientX , clientY , screenX , screenY
+    // altkey , ctrlkey , shiftkey , keyCode 
+
+    // document.getElementById('hi').addEventListener('click' , function(p) {
+    //     console.log(p);
+    // },false) 
+    
+    //Event propogation
+    // document.getElementById('companies').addEventListener('click' , function (p) {
+    //     console.log("clicked inside the ul");
+    // } , false)
+
+    // // document.getElementById('hi').addEventListener('click' , function (p) {
+    // //     console.log (" hello");
+    // // } , false)
+
+    // // event propogration ka kam hi bubbling up hota h --> vo upr se neeche jaata h 
+    // //phle jo inner event h vo run hoga uske bdd bhr vala
+    // // capturing mode - true value --> top se bottom --> phle outer uske bdd inner 
+
+    // //if we don't want ki bubbling ho so we can use  
+    // //stopPropagation se upr vala jo h vo run ni hoga only jo uss id pe function lgya h vhi hoga
+    // document.getElementById('hi').addEventListener('click' , function (p) {
+    //     console.log("clicked");
+    //     p.stopPropagation()
+    // } , false)
+
+    // document.getElementById('link').addEventListener('click' , function(e){
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log('google link clicked');
+    // },false)
+    
+</script>
+</html>
