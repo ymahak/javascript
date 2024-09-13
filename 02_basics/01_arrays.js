@@ -8,12 +8,15 @@
 
 // array - copy operation create shallow copies.
 
-// const myArr = [0,2,3,4,5]
+const myArr = [0,2,3,4,5]
 // //console.log(myArr[1]);
 
-// //myArr.push(8)
-// myArr.unshift(4) //start me hi add kr denge .....shift() - jo bhi no. add hua aage vo remove ho jayega 
-// //console.log(myArr);
+myArr.push(8)
+myArr.unshift(4) //start me hi add kr denge .....shift() - jo bhi no. add hua aage vo remove ho jayega 
+console.log(myArr);
+myArr.shift();
+console.log(myArr);
+
 // //same pop() - jo bhi last value hogi array me usko delete kr denge 
 
 // const myn1 = myArr.slice(1,3)
@@ -35,18 +38,22 @@ const dc_heros =["spiderman " , "flash" , "batman"]
 // spread operator - ek ek element separate hogya h array ka
 
 const new_Heros = [...marvel_heros , ...dc_heros]
-console.log(new_Heros);
+console.log(new_Heros);  //[ 'superman', 'thor', 'ironman', 'spiderman ', 'flash', 'batman' ]
 
 const another = [1 ,2 , 3 , [4,5,6] , [7,[9,8]]]
 const real = another.flat(2)
-console.log(real);
- 
-console.log(Array.isArray("mahak")); // is nam ka array h 
-console.log(Array.from("Mahak")); // make a array 
-console.log(Array.from({name : "mahak"})); // empty array ... Key - value ka ni bna paaye to empty array dega
+console.log(real);  // [
+//     1, 2, 3, 4, 5,
+//     6, 7, 9, 8
+//   ]
 
-let score1 = 100
-let score2 = 200
-let score3 = 300
-console.log(Array.of(score1,score2,score3)); // new array bn jayega 
+ 
+// console.log(Array.isArray("mahak")); // is nam ka array h 
+// console.log(Array.from("Mahak")); // make a array 
+// console.log(Array.from({name : "mahak"})); // empty array ... Key - value ka ni bna paaye to empty array dega
+
+// let score1 = 100
+// let score2 = 200
+// let score3 = 300
+// console.log(Array.of(score1,score2,score3)); // new array bn jayega 
 

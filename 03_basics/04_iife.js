@@ -4,13 +4,13 @@
 
 (function hello(){
     //named IIFE
-    console.log(`DB CONNECTED`);
+    console.log(`DB CONNECTED`); 
 })();
 
 // same with arrow functions
 
 ( (name) => {
-    console.log(`DB connected two ${name}`);
+    console.log(`DB connected to ${name}`);
 })  ('Mahak') ;
 
 
