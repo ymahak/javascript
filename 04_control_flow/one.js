@@ -1,26 +1,27 @@
  // comparison operators -- > , < , <= , >= , == , != , ===(strictly check the data type also) , !==
   
-// var ka scope global hota h to if we have to access anything locally we use const or let
+// var ka scope global hota h to if we have to access anything locally (block scope) we use const or let
 
-// const score = 200
+const score = 200
 
-// if(score > 100){
-//     //block scope 
-//     const power = "fly"
-//     // var use krenge to bhr vala bhi execute ho jayega
-//     console.log(`User power : ${power}`);
-// }
+if(score > 100){
+    //block scope 
+    const power = "fly"
+    // var use krenge to bhr vala bhi execute ho jayega
+    console.log(`User power : ${power}`); //User power : fly
+}
 
 //console.log(`power : ${power}`); // ye run ni hoga kyuki power global scope me execute ni hua h 
  
 
  //implicit scope  -- aise ni krna h 
-//  const balance = 1000
-//  if(balance > 500) console.log("hellooo");
+ const balance = 1000
+ if(balance > 500) console.log("hellooo"); //hellooo but we should not prefer this 
 
 // control flow -> if , if else , if else if , switch case 
 
 
+//Switch case 
 const month = 3
 
 switch (month) {

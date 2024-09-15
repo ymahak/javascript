@@ -37,4 +37,3 @@ const newNums = myNums.filter( (num) => {
 })
 console.log(newNums);
 
-// chaining :- we can use more than 2 methods at a time 
