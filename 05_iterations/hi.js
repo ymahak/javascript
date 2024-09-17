@@ -1,1 +1,1 @@
-It filters the elements of the array that return false for the applied condition and returns the array which contains elements that satisfy the applied condition.
+console.log("Hello ");
